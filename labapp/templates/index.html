@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <aside>
+        <h3>Выберите интересующие параметры:</h3>
+        <p>Выберите класс перелёта</p>
+        <select>
+            <option value> - </option>
+            <option value>Эконом</option>
+            <option value>Бизнес</option>
+        </select>
+        <p> ## НУ И ТУТ ЕЩЕ ВЫБОРЫ КАКИЕ У НАС ЕСТЬ ##</p>
+    </aside>
+    <article>
+        <section>
+            {% for row in processed_files %}
+                <h3>
+                    {{row[1]}} ## здесь тип название компании ##
+                </h3>
+                <h4>
+                    ## тут наверное надо кнопку подробнее или какую то инфу (рейтинг) ##
+                </h4>
+                <p>
+                    Дата обработки: {{row[2]}}
+                    ## Eto vasche hz nado net ##
+                </p>
+            {% endfor %}
+        </section>
+    </article>
+
+{% endblock %}

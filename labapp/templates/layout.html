@@ -1,0 +1,36 @@
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<title>{{title}}</title>
+		<link rel="stylesheet" href="/static/stylesheets/styles.css">
+		<script type="text/javascript" src="/static/javascripts/jquery-3.6.0.min.js"></script>
+</head>
+		<body>
+			<div class="wrapper">
+				<header>
+					<a href="/"><img src="/static/images/logo.png" alt="Whitesquare logo"></a>
+					<div class="heading">
+						<h1 id="headname">{{pname}}</h1>
+					</div>
+				</header>
+				<main id="{{pname}}">
+					{% block content %}{% endblock %}
+				</main>
+			</div>
+			<footer>
+				<div class="footer">
+					<div id="social">
+						<h3>Наша команда</h3>
+						<a href="http://twitter.com/" class="social-icon twitter"></a>
+						<a href="http://google.com/" class="social-icon google"></a>
+					</div>
+					<div id="footer-logo">
+						<a href="/"><img src="/static/images/footer-logo.png" alt="Whitesquare logo"></a>
+					</div>
+				</div>
+			</footer>
+			<script type="text/javascript" src="/static/javascripts/topmenu.js"></script>
+			<script type="text/javascript" src="/static/javascripts/jqfunc.js"></script>
+		</body>
+</html>
